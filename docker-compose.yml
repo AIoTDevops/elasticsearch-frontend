@@ -9,13 +9,8 @@ services:
         LC_ALL: en_US.UTF-8
     build: .
     ports:
-      - "8099:8080"
-    links: ["redis-server:redis"]
+      - "8063:8080"
+    
 
   
-  # redis server 
-  redis-server:
-    image: redis:latest
-    hostname: "redis"
-    ports:
-      - "6379:6379"
+  
